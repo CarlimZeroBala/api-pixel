@@ -48,7 +48,7 @@ app.post('/api/contato', async (req, res) => {
         // ETAPA B: Envio do E-mail via Resend
         // Usamos o domínio de teste obrigatório 'onboarding@resend.dev'
         const emailResponse = await resend.emails.send({
-            from: 'Atelie Pixel <notificacoes@ateliepixel.com>',
+            from: 'Atelie Pixel <onboarding@resend.dev>',
             to: process.env.EMAIL_TO,
             reply_to: email,
             subject: 'Novo Contato - Ateliê Píxel',
