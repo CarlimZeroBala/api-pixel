@@ -1,0 +1,71 @@
+.secao-assinaturas{
+    max-width: 1200px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.planos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1%;
+}
+
+.plano{
+    height: 680px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.plano h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.plano a{
+    width: 70%;
+    align-self: center;
+    text-align: center;
+}
+
+.promocao{
+    background-color: rgb(205, 248, 205);
+    font-size: 15px;
+    font-weight: 500;
+    width: fit-content;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin: 0;
+}
+
+.preco{
+    color: green;
+    margin: 0;
+    line-height: 30px;
+}
+
+.vantagem {
+    font-size: 13px;
+}
+
+.preco-container p{
+    margin: 0;
+}
+
+.check{
+    color: green; font-weight: bold;
+}
+
+.uncheck{
+    color: red; font-weight: bold;
+}

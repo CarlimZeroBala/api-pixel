@@ -1,0 +1,89 @@
+.secao-beneficios {
+    background-color: #f3ff6ccc;
+    overflow: visible;
+    height: 720px;
+    position: relative;
+}
+
+.beneficios-texto{
+    max-width: 700px;
+}
+
+.video-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.video-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.beneficios-conteudo {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    height: 720px;
+    margin: auto;
+    overflow: visible;
+    position: relative;
+}
+
+.secao-beneficios img{
+    width: 90px;
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    width: 477px;
+    align-items: center;
+    gap: 36px;
+    color: #F8F8F8;
+    overflow: visible;
+    position: absolute;
+    top: 10px;
+    right: 15%;
+    transform: translateX(50%);
+}
+
+.beneficio-card{
+    background: linear-gradient(to left, #a1f466c3 0%, #73b941c5 60% );
+    border-radius: 41px;
+    padding: 20px 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.18s;
+}
+
+.beneficio-card:hover{
+    transform: translateY(-4px);
+}
+
+.card-ativo{
+    text-align: center;
+    margin: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+/* quando o card tiver a classe `open`, mostra o parágrafo ativo */
+.beneficio-card.open .card-ativo{
+    display: block;
+    opacity: 1;
+    height: fit-content;
+}

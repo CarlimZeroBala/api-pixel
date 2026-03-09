@@ -1,0 +1,41 @@
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3ff6cd7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top:100px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.contatos h2{
+    font-size: 30px;
+    margin: 0;
+}
+
+.contatos p {
+    margin: 0;
+}
+
+
+.contatos div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contatos img {
+    width: 20px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FEBA53;
+    font-family: arial;
+}

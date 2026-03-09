@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="icon" type="image/png" href="imagens/Icones/logo-guia.png">
+
+    <meta name="description" content="Desenvolvimento de sites profissionais, rápidos e otimizados para SEO. Criamos páginas sob medida para empresas que querem mais clientes online.">
+    <title>Ateliê Píxel | Desenvolvimento de Sites Profissionais</title>
+</head>
+<body>
+    
+
+    <div class="w-full absolute fixed top-0  z-50 pointer-events-none">
+        <div class="max-w-[1300px] mx-auto flex justify-between items-center pr-5">
+            <a href="/" class="pointer-events-auto flex w-fit">
+                <img src="imagens/Icones/logo.png" alt="logo" class="h-10 pt-1">
+            </a>
+
+            <button class="pointer-events-auto cursor-pointer w-6 flex flex-col gap-[5px] lg:hidden" id="abrir-menu">
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+            </button>
+        </div>
+
+        <div class="pointer-events-auto w-full bg-[#530077] overflow-hidden transition-all duration-600 ease-in-out h-0 px-5 lg:hidden flex flex-col gap-6" id="menu">
+            <nav class="flex flex-col gap-2">
+                <a href="/" class="nav-a">Início</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/servicos/" class="nav-a">Serviços</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/sobre/" class="nav-a">Sobre</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/contatos/" class="nav-a">Contatos</a>
+            </nav>
+            <a href="/contatos/" class="btn">Entre em Contato</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="h-[100dvh] lg:h-[55dvh] w-full relative bg-[#4C0B6099] px-10 -mt-[40px] flex justify-center items-center">
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover -z-1 opacity-80">
+            <source src="imagens/bg-hero.mp4" type="video/mp4">
+        </video>
+
+        <div class="flex flex-col lg:flex-row lg:justify-end justify-between h-fit items-center lg:max-w-[1200px] max-w-[95dvw] lg:h-full">
+            <div class="h-fit pb-10 lg:pb-0 flex flex-col justify-between">
+
+                <h1 class="lg:mr-10">Sites que transformam <br>ideias em <span class="destaque">presença digital.</span></h1>
+                <p class="lg:w-100 py-4 lg:py-0 lg:mt-4">Criamos experiências digitais estratégicas que <b>atraem, convencem e geram resultados.</b></p>
+
+                <a href="/servicos/" class="btn mt-6">Serviços</a>
+            </div>
+
+
+            <!-- Mostruário -->
+            <div class="relative w-90 h-32 lg:w-160 lg:h-59 overflow-hidden hidden lg:flex">
+
+                <!-- Link invisível -->
+                <a id="slideLink" href="#" class="absolute inset-0 z-10"></a>
+
+                <!-- Wrapper que vai deslizar -->
+                <div id="slider" class="flex h-full transition-transform duration-500 ease-in-out">
+
+                    
+                    <div class="lg:w-160 lg:h-59 w-90 h-32 bg-[url('../imagens/demonstracao-1.png')] bg-cover bg-center shrink-0"></div>
+                    <div class="lg:w-160 lg:h-59 w-90 h-32 bg-[url('../imagens/demonstracao-2.png')] bg-cover bg-center shrink-0"></div>
+                    <div class="lg:w-160 lg:h-59 w-90 h-32 bg-[url('../imagens/demonstracao-3.png')] bg-cover bg-center shrink-0"></div>
+
+                </div>
+                    <!-- Botões -->
+                    <div class="absolute top-0 lg:left-0 w-full flex justify-between items-center h-full px-2 z-20">
+                        <button id="prev" class="cursor-pointer mr-2 bg-[#14141463] border border-[#DD56FF] rounded-[9px] shadow shadow-[0_0_16px_0_#DD56FF] transition-all duration-400 ease-in-out hover:bg-[#4b2a4663] hover:-translate-y-[2px]">
+                            <img src="imagens/Icones/seta.png" class="w-7 lg:w-fit"  draggable="false">
+                        </button>
+                        <button id="next" class="cursor-pointer mr-2 bg-[#14141463] border border-[#DD56FF] rounded-[9px] shadow shadow-[0_0_16px_0_#DD56FF] transition-all duration-400 ease-in-out hover:bg-[#4b2a4663] hover:-translate-y-[2px]">
+                            <img src="imagens/Icones/seta.png" class="scale-x-[-1] w-7 lg:w-fit" draggable="false">
+                        </button>
+                    </div>
+
+                </div>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header class="w-full bg-[#530077] border-b border-b-[#9400AE] sticky top-0 z-40 backdrop-blur h-[42px]">
+        <div class="flex justify-between max-w-[1300px] items-center mx-auto py-2">
+            <div></div>
+
+            <nav class="hidden lg:flex absolute left-1/2 -translate-x-40 flex gap-8">
+                <a href="/" class="nav-a">Início</a>
+                <a href="/servicos/" class="nav-a">Serviços</a>
+                <a href="/sobre/" class="nav-a">Sobre</a>
+                <a href="/contatos/" class="nav-a">Contatos</a>
+            </nav>
+            
+            <a href="/contatos/" class="hidden lg:inline btn ml-auto hover:translate-y-0">Entre em Contato</a>
+        </div>
+    </header>
+
+    <!-- Como Funciona -->
+    <section class="max-w-[1080px] mx-auto flex flex-col py-25 px-[10dvw] lg:px-0 gap-10">
+            <div class="flex flex-col gap-3">
+                <h2>Como <span class="destaque">Funciona</span></h2>
+                <p class="text-[14px]">Entenda como podemos te ajudar com seu negócio.</p>
+            </div>
+
+        <div class="flex flex-col lg:flex-row w-full lg:gap-10 justify-between items-center h-fit lg:h-[310px] lg:gap-0 gap-10">
+            <!-- Card 1 -->
+            <div class="card-funciona">
+                <div class="flex flex-col gap-4 lg:items-center items-start">
+                    <div class="flex flex-col lg:items-center items-start gap-2">
+                        <img src="imagens/Icones/funciona-card1.png" class="h-8" draggable="false">
+                        <h3 class="text-start mt-1">Diagnóstico & Planejamento</h3>
+                    </div>
+                    <p>
+                        Conversamos com você para entender 
+                        suas necessidades, 
+                        objetivos e público do site.
+                    </p>
+                </div>
+
+                <a href="/servicos/" class="btn">Saiba Mais</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-funciona">
+                <div class="flex flex-col lg:items-center items-start gap-2">
+                    <div class="flex flex-col lg:items-center items-start gap-2">
+                        <img src="imagens/Icones/funciona-card2.png" class="-mt-[2px] -mr-[8px] h-9" draggable="false">
+                        <h3 class="mt-[2px]">Protótipo & Design</h3>
+                    </div>
+                    <p>
+                        Desenvolvemos o layout e a 
+                        experiência do usuário em um 
+                        protótipo visual, especialmente 
+                        para você.
+                    </p>
+                </div>
+
+                <a href="/servicos/" class="btn">Saiba Mais</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-funciona">
+                <div class="flex flex-col gap-4 lg:items-center items-start">
+                    <div class="flex flex-col lg:items-center items-start gap-2">
+                        <img src="imagens/Icones/funciona-card3.png" class="h-9" draggable="false">
+                        <h3>Validação & Refinamento</h3>
+                    </div>
+                    <p>
+                        Apresentamos o projeto, 
+                        coletamos seu feedback e 
+                        realizamos os ajustes finais.
+                    </p>
+                </div>
+
+                <a href="/servicos/" class="btn">Saiba Mais</a>
+            </div>
+
+            <img src="imagens/img-funciona.png" class="h-0 lg:h-52">
+        </div>
+
+
+
+
+    </section>
+
+    <!-- Vantagens -->
+    <section class="w-full h-fit py-25 bg-[url('../imagens/bg-quadrados.png')] bg-cover bg-center bg-no-repeat">
+        <div class="flex flex-col lg:flex-row lg:max-w-[810px] max-w-[80dvw] lg:px-0 px-4 w-full h-full mx-auto justify-between items-center">
+        
+
+            <!-- Texto -->
+            <div class="flex flex-col lg:w-65 lg:max-w-none w-full lg:h-44 h-fit justify-between">
+                <h2 class="lg:max-w-70 max-w-none relative">
+                    Porque eu deveria <strong class="destaque">ter um site?</strong>
+                    <img src="imagens/quadrados.png" class="absolute -left-36 -translate-x-1/2 -top-6 w-40 md:w-auto pointer-events-none hidden lg:inline">
+                </h2>
+                <p class="max-w-70">Descubra como um site fortalece e expande seu negócio.</p>
+                <a href="/sobre/" class="btn mt-3 lg:flex hidden">Sobre Nós</a>
+            </div>
+
+            <!-- Setas -->
+            <div class="flex flex-col h-70 justify-between hidden lg:flex">
+                <img src="imagens/seta-cima-vantagens.png" class="lg:w-[144px] w-14 drop-shadow drop-shadow-[0_0_14px_#E17FFF] -mb-8">
+                <img src="imagens/seta-meio-vantagens.png" class="lg:w-[144px] w-14 drop-shadow drop-shadow-[0_0_14px_#E17FFF]">
+                <img src="imagens/seta-baixo-vantagens.png" class="lg:w-[144px] w-14 drop-shadow drop-shadow-[0_0_14px_#E17FFF] -mt-8">
+            </div>
+
+            <div class="grid grid-cols-1 lg:w-fit w-full gap-3 justify-between h-90 mb-10">
+                <!-- Card 1 -->
+                <div class="card-vantagens active">
+                    <h3>Mais visibilidade</h3> 
+                    <div class="conteudo flex flex-col gap-2">
+                        <p>Destaque-se da concorrência com posicionamento online forte.</p>
+                        <a href="/sobre/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                    </div>
+                    
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-vantagens">
+                    <h3>Credibilidade profissional</h3>
+                    <div class="conteudo flex flex-col gap-2">
+                        <p>Passe mais confiança do que apenas redes sociais.</p>
+                        <a href="/sobre/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-vantagens">
+                    <h3>Geração de clientes</h3>
+                    <div class="conteudo flex flex-col gap-2">
+                        <p>Direcione visitantes para ações claras e estratégicas.</p>
+                        <a href="/sobre/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="flex flex-col lg:max-w-[1200px] max-w-[90dvw] items-center mx-auto py-25 gap-10">
+        <div class="text-center">
+            <h2><strong class="destaque">Diferenciais</strong> que colocam sua marca à frente</h2>
+            <p>Estrutura otimizada para atrair e converter clientes.</p>
+        </div>
+        <ul class="
+                flex md:grid
+                overflow-x-auto
+                md:overflow-visible
+                snap-x snap-mandatory
+                scroll-smooth
+                w-full
+                gap-6
+                px-[calc(50%-160px)]
+                md:px-0
+                md:grid-cols-3
+                md:gap-10
+                md:w-fit
+                lg:gap-15
+                lg:gap-x-20
+                scrollbar-none
+                scroll-pl-6
+                ">
+            <!-- Card 1 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo pr-[1px]"></div>
+                <div>
+                    <h3>Desenvolvimento Sob Medida</h3>
+                    <p>Soluções personalizadas conforme objetivos, público e mercado do cliente.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 2 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo"></div>
+                <div>
+                    <h3 class="w-fit lg:w-50">Performance e Otimização</h3>
+                    <p>Sites rápidos, leves e estruturados para melhor desempenho nos buscadores.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo pr-[2px]"></div>
+                <div>
+                    <h3 class="lg:w-50 w-fit">Design Estratégico</h3>
+                    <p>Interface planejada para guiar o usuário naturalmente e aumentar conversões consistentes.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 4 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo"></div>
+                <div>
+                    <h3 class="lg:w-50 w-fit">Hospedagem Profissional</h3>
+                    <p>Configuração em provedores líderes do Brasil, com estabilidade e segurança.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 5 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo"></div>
+                <div>
+                    <h3 class="lg:w-50 w-fit">Estrutura Pensada para SEO</h3>
+                    <p>Base técnica otimizada para indexação eficiente e crescimento orgânico.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 6 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo w-[18px]"></div>
+                <div>
+                    <h3>Escalabilidade e Flexibilidade</h3>
+                    <p>Projetos preparados para crescer junto com a evolução do negócio.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contatos -->
+    <section class="w-full bg-[#7800AB] py-10">
+        <div class="flex flex-col-reverse items-center lg:items-start lg:flex-row max-w-[1100px] mx-auto justify-between">
+            <div class="flex flex-col items-center lg:items-start gap-10 w-75 px-10">
+                <h2 class="text-[20px] w-fit text-center lg:text-start"><b>Nos contate</b> pelos canais abaixo</h2>
+                <div class="flex flex-col gap-4 items-center lg:items-start">
+                    <a class="contato-btn">
+                        <img src="imagens/Icones/whatsapp.png" alt="What's App" class="h-5 contato-icon transition-all duration-500 ease-in-out"><p>(61) 0000 0000</p>
+                    </a>
+
+                    <a class="contato-btn">
+                        <img src="imagens/Icones/email.png" alt="E-mail" class="h-5 contato-icon transition-all duration-500 ease-in-out"><p>contato@ateliepixel.com</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex lg:flex-col items-center self-center w-2/3 py-10 lg:w-fit">
+                <div class="lg:w-[2px] lg:h-20 h-[2px] w-1/2 bg-[#282828]"></div>
+                <div class="text-[#282828] px-4 lg:p-0">Ou</div>
+                <div class="lg:w-[2px] lg:h-20 h-[2px] w-1/2 bg-[#282828]"></div>
+            </div>
+
+            <div class="flex flex-col gap-5 w-85">
+                <h2 class="text-[20px] w-fit self-center lg:self-start">Nos diga <b>o que precisa</b></h2>
+                <form id="form-contato" class="flex flex-col gap-2">
+                    <input type="email" id="email" required placeholder="Email*" class="w-full bg-[#3D0048] py-3 px-6 rounded-[34px]">
+                    <input type="tel" id="telefone" required placeholder="Telefone*" class="w-full bg-[#3D0048] py-3 px-6 rounded-[34px]">
+                    <textarea name="mensagem" id="mensagem" required placeholder="Mensagem*" class="w-full bg-[#3D0048] py-3 px-6 rounded-[30px] resize-none" rows="4"></textarea>
+                    <button type="submit" id="btn-enviar" class="bg-[#9135A8] shadow shadow-[0_4px_4px_0_#00000025] rounded-4xl px-6 py-2 self-center transition-all duration-600 hover:shadow-none hover:translate-y-[2px]">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <a class="w-50 md:self-center"><img src="imagens/Icones/logo.png" alt="logo"></a>
+        <div class="md:gap-5 gap-2 pl-3 md:pl-0">
+            <h3>Navegação</h3>
+            <div class="gap-1">
+                <a href="/">Início</a>
+                <a href="/servicos/">Serviços</a>
+                <a href="/sobre/">Sobre</a>
+                <a href="/contatos/">Contatos</a>
+            </div>
+        </div>
+
+        <div class="md:gap-5 gap-2 pl-3 md:pl-0">
+            <h3>Contatos</h3>
+            <div class="gap-1">
+                <div class="flex flex-row gap-1"><img src="imagens/Icones/whatsapp.png" class="w-4"><p>(61)00000-0000</p></div>
+                <div class="flex flex-row gap-1"><img src="imagens/Icones/email.png" class="w-4"><p>contato@ateliepixel.com</p></div>
+            </div>
+        </div>
+
+        <a href="/contatos/" class="btn h-fit md:self-center ml-3 md:ml-0">Entre em Contato</a>
+    </footer>
+</body>
+
+<script>
+// Mostruário Hero
+
+const slider = document.getElementById("slider")
+const slideLink = document.getElementById("slideLink")
+const prev = document.getElementById("prev")
+const next = document.getElementById("next")
+
+const links = [
+    "pagina1.html",
+    "pagina2.html",
+    "pagina3.html"
+]
+
+let index = 0
+const total = 3
+
+function getSlideWidth() {
+    // Se for menor que 1024px (tablet e mobile)
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+        return 360
+    } else {
+        return 640
+    }
+}
+
+function updateSlider() {
+    const slideWidth = getSlideWidth()
+    slider.style.transform = `translateX(-${index * slideWidth}px)`
+    slideLink.href = links[index]
+}
+
+next.addEventListener("click", () => {
+    index = (index + 1) % total
+    updateSlider()
+})
+
+prev.addEventListener("click", () => {
+    index = (index - 1 + total) % total
+    updateSlider()
+})
+
+// Atualiza quando redimensionar a tela
+window.addEventListener("resize", updateSlider)
+
+updateSlider()
+
+
+// Card Vantagens
+const cards = document.querySelectorAll(".card-vantagens")
+const defaultCard = cards[0]
+
+cards.forEach(card => {
+  card.addEventListener("click", () => {
+    cards.forEach(c => c.classList.remove("active"))
+    card.classList.add("active")
+  })
+})
+
+
+// Menu Mobile
+const abrirMenu = document.getElementById("abrir-menu")
+const menu = document.getElementById("menu")
+
+abrirMenu.addEventListener("click", (e) => {
+    e.stopPropagation() // impede de fechar imediatamente
+
+    menu.classList.toggle("h-0")
+    menu.classList.toggle("h-49")
+    menu.classList.toggle("pt-0")
+    menu.classList.toggle("pt-3")
+})
+
+// fechar ao clicar fora
+document.addEventListener("click", (e) => {
+
+    if (!menu.contains(e.target) && !abrirMenu.contains(e.target)) {
+
+        menu.classList.add("h-0")
+        menu.classList.remove("h-49")
+        menu.classList.add("pt-0")
+        menu.classList.remove("pt-3")
+
+    }
+
+    })
+
+
+// Integração do Formulário de Contato
+document.getElementById('form-contato').addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const btnEnviar = document.getElementById('btn-enviar');
+    const textoOriginalBtn = btnEnviar.innerText;
+
+    btnEnviar.innerText = 'Enviando...';
+    btnEnviar.disabled = true;
+
+    const dadosFormulario = {
+        email: document.getElementById('email').value,
+        telefone: document.getElementById('telefone').value,
+        mensagem: document.getElementById('mensagem').value
+    };
+
+    try {
+        const response = await fetch('https://api-ateliepixel.onrender.com/api/contato', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dadosFormulario)
+        });
+
+        if (response.ok) {
+            alert('Mensagem enviada com sucesso!');
+            form.reset(); 
+        } else {
+            alert('Ocorreu um erro ao enviar. Tente novamente.');
+        }
+    } catch (error) {
+        console.error('Erro na requisição:', error);
+        alert('Erro de conexão. O servidor Node está ligado?');
+    } finally {
+        btnEnviar.innerText = textoOriginalBtn;
+        btnEnviar.disabled = false;
+    }
+});
+</script>
+
+</html>

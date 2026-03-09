@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="icon" type="image/png" href="../imagens/Icones/logo-guia.png">
+
+    <meta name="description" content="Desenvolvimento de sites profissionais, rápidos e otimizados para SEO. Criamos páginas sob medida para empresas que querem mais clientes online.">
+    <title>Ateliê Píxel | Desenvolvimento de Sites Profissionais</title>
+</head>
+<body>
+    <header class="w-full bg-[#530077] absolute fixed top-0 z-40 backdrop-blur lg:border-b lg:border-b-[#9400AE]">
+        <div class="relative flex justify-between max-w-[1300px] items-center mx-auto py-1 pr-5 lg:pr-0 border-b border-b-[#9400AE] lg:border-none">
+            <img src="../imagens/Icones/logo.png" class="h-9">
+
+            <!-- Menu Desktop -->
+            <nav class="hidden lg:flex absolute left-1/2 -translate-x-40 flex gap-8">
+                <a href="/" class="nav-a">Início</a>
+                <a href="/servicos/" class="nav-a">Serviços</a>
+                <a href="/sobre/" class="nav-a">Sobre</a>
+                <a href="/contatos/" class="nav-a">Contatos</a>
+            </nav>
+            
+            <a href="/contatos/" class="hidden lg:inline btn ml-auto hover:translate-y-0">Entre em Contato</a>
+
+            <button id="abrir-menu" class="cursor-pointer w-6 flex flex-col gap-[5px] lg:hidden">
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="w-full bg-[#530077] overflow-hidden transition-all duration-600 ease-in-out h-0 px-5 lg:hidden flex flex-col gap-6" id="menu">
+            <nav class="flex flex-col gap-2">
+                <a href="/" class="nav-a">Início</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/servicos/" class="nav-a">Serviços</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/sobre/" class="nav-a">Sobre</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/contatos/" class="nav-a">Contatos</a>
+            </nav>
+            <a href="contatos.html" class="btn">Entre em Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+     <section class="h-[100dvh] lg:h-[55dvh] w-full flex flex-col justify-center items-center bg-[url(../imagens/bg-quadrados.png)]">
+        <div class="h-35 flex flex-col  items-center justify-between text-center gap-4">
+            <h1 class="w-2/3 md:w-fit">Tecnologia com <span class="destaque">visão de negócio.</span></h1>
+            <p class="w-4/5 lg:w-120">Unimos design e estratégia para ajudar empresas a se posicionarem <b>com autoridade no ambiente digital.</b></p>
+            <a href="servicos.html" class="btn mt-2">Serviços</a>
+        </div>
+     </section>
+
+    <div class="flex flex-col md:flex-row max-w-[90dvw] lg:max-w-[800px] justify-between mx-auto pt-20 gap-20">
+        <!-- Quem Somos -->
+        <section class="flex flex-col w-full h-70 md:w-90 md:h-80  justify-between">
+            <div class="flex flex-col gap-2">
+                <h2>Quem <span class="destaque">Somos</span></h2>
+                <p class="text-[18px]">Um pouco de nós.</p>
+            </div>
+            <p class="mt-7">
+                Somos uma empresa especializada na 
+                criação de sites profissionais, 
+                unindo criatividade e tecnologia para
+                entregar projetos modernos, 
+                funcionais e estratégicos.
+            </p>
+            <p class="bg-[#3D004876] border-l-[3px] border-[#B500E2] rounded-[18px] py-4 pl-4 mt-5 pr-10 mt-10">
+                A parceria entre design e 
+                tecnologia é o nosso diferencial. 
+                enquanto o design garante 
+                estética e personalidade à marca, a 
+                área de TI assegura segurança e estrutura técnica.
+            </p>
+        </section>
+
+        <!-- Filosofia -->
+        <section class="flex flex-col w-full h-70 md:w-80 md:h-80 justify-between">
+            <div class="flex flex-col gap-2">
+                <h2>Nossa <span class="destaque">Filosofia</span></h2>
+                <p class="text-[18px]">como trabalhamos.</p>
+            </div>
+            <p>
+                Acreditamos que um site vai 
+                muito além de estar online, 
+                ele precisa representar a 
+                essência da marca e gerar resultados reais.
+            </p>
+            <p class="bg-[#3D004876] border-l-[3px] border-[#B500E2] rounded-[18px] py-4 pl-4 mt-5 pr-10">
+                Nossa filosofia é criar 
+                projetos que unem estratégia, 
+                estética e funcionalidade, 
+                sempre colocando o cliente no 
+                centro de cada decisão.
+            </p>
+        </section>
+     </div>
+
+    <!-- Diferenciais -->
+    <section class="flex flex-col lg:max-w-[1200px] max-w-[90dvw] items-center mx-auto py-25 gap-10">
+        <div class="text-center">
+            <h2><strong class="destaque">Diferenciais</strong> que colocam sua marca à frente</h2>
+            <p>Estrutura otimizada para atrair e converter clientes.</p>
+        </div>
+        <ul class="
+                flex md:grid
+                overflow-x-auto
+                md:overflow-visible
+                snap-x snap-mandatory
+                scroll-smooth
+                w-full
+                gap-6
+                px-[calc(50%-160px)]
+                md:px-0
+                md:grid-cols-3
+                md:gap-10
+                md:w-fit
+                lg:gap-15
+                lg:gap-x-20
+                scrollbar-none
+                scroll-pl-6
+                ">
+            <!-- Card 1 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo pr-[1px]"></div>
+                <div>
+                    <h3>Desenvolvimento Sob Medida</h3>
+                    <p>Soluções personalizadas conforme objetivos, público e mercado do cliente.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 2 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo"></div>
+                <div>
+                    <h3 class="w-fit lg:w-50">Performance e Otimização</h3>
+                    <p>Sites rápidos, leves e estruturados para melhor desempenho nos buscadores.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo pr-[2px]"></div>
+                <div>
+                    <h3 class="lg:w-50 w-fit">Design Estratégico</h3>
+                    <p>Interface planejada para guiar o usuário naturalmente e aumentar conversões consistentes.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 4 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo"></div>
+                <div>
+                    <h3 class="lg:w-50 w-fit">Hospedagem Profissional</h3>
+                    <p>Configuração em provedores líderes do Brasil, com estabilidade e segurança.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 5 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo"></div>
+                <div>
+                    <h3 class="lg:w-50 w-fit">Estrutura Pensada para SEO</h3>
+                    <p>Base técnica otimizada para indexação eficiente e crescimento orgânico.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+
+            <!-- Card 6 -->
+            <li class="card-diferencial snap-center shrink-0">
+                <div class="circulo w-[18px]"></div>
+                <div>
+                    <h3>Escalabilidade e Flexibilidade</h3>
+                    <p>Projetos preparados para crescer junto com a evolução do negócio.</p>
+                    <a href="/servicos/" class="a-dif"><div class="saiba-dif">Saiba Mais</div> <div class="seta-dif">⟶</div></a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- Contatos -->
+    <section class="w-full bg-[#7800AB] py-10">
+        <div class="flex flex-col-reverse items-center lg:items-start lg:flex-row max-w-[1100px] mx-auto justify-between">
+            <div class="flex flex-col items-center lg:items-start gap-10 w-75 px-10">
+                <h2 class="text-[20px] w-fit text-center lg:text-start"><b>Nos contate</b> pelos canais abaixo</h2>
+                <div class="flex flex-col gap-4 items-center lg:items-start">
+                    <a class="contato-btn">
+                        <img src="../imagens/Icones/whatsapp.png" alt="What's App" class="h-5 contato-icon transition-all duration-500 ease-in-out"><p>(61) 0000 0000</p>
+                    </a>
+
+                    <a class="contato-btn">
+                        <img src="../imagens/Icones/email.png" alt="E-mail" class="h-5 contato-icon transition-all duration-500 ease-in-out"><p>contato@ateliepixel.com</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex lg:flex-col items-center self-center w-2/3 py-10 lg:w-fit">
+                <div class="lg:w-[2px] lg:h-20 h-[2px] w-1/2 bg-[#282828]"></div>
+                <div class="text-[#282828] px-4 lg:p-0">Ou</div>
+                <div class="lg:w-[2px] lg:h-20 h-[2px] w-1/2 bg-[#282828]"></div>
+            </div>
+
+            <div class="flex flex-col gap-5 w-85">
+                <h2 class="text-[20px] w-fit self-center lg:self-start">Nos diga <b>o que precisa</b></h2>
+                <form id="form-contato" class="flex flex-col gap-2">
+                    <input type="email" id="email" required placeholder="Email*" class="w-full bg-[#3D0048] py-3 px-6 rounded-[34px]">
+                    <input type="tel" id="telefone" required placeholder="Telefone*" class="w-full bg-[#3D0048] py-3 px-6 rounded-[34px]">
+                    <textarea name="mensagem" id="mensagem" required placeholder="Mensagem*" class="w-full bg-[#3D0048] py-3 px-6 rounded-[30px] resize-none" rows="4"></textarea>
+                    <button type="submit" id="btn-enviar" class="bg-[#9135A8] shadow shadow-[0_4px_4px_0_#00000025] rounded-4xl px-6 py-2 self-center transition-all duration-600 hover:shadow-none hover:translate-y-[2px]">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <a class="w-50 md:self-center"><img src="../imagens/Icones/logo.png" alt="logo"></a>
+        <div class="md:gap-5 gap-2 pl-3 md:pl-0">
+            <h3>Navegação</h3>
+            <div class="gap-1">
+                <a href="/">Início</a>
+                <a href="/servicos/">Serviços</a>
+                <a href="/sobre/">Sobre</a>
+                <a href="/contatos/">Contatos</a>
+            </div>
+        </div>
+
+        <div class="md:gap-5 gap-2 pl-3 md:pl-0">
+            <h3>Contatos</h3>
+            <div class="gap-1">
+                <div class="flex flex-row gap-1"><img src="../imagens/Icones/whatsapp.png" class="w-4"><p>(61)00000-0000</p></div>
+                <div class="flex flex-row gap-1"><img src="../imagens/Icones/email.png" class="w-4"><p>contato@ateliepixel.com</p></div>
+            </div>
+        </div>
+
+        <a href="/contatos/" class="btn h-fit md:self-center ml-3 md:ml-0">Entre em Contato</a>
+    </footer>
+    
+</body>
+
+<script>
+    const abrirMenu = document.getElementById("abrir-menu")
+    const menu = document.getElementById("menu")
+
+    abrirMenu.addEventListener("click", (e) => {
+        e.stopPropagation() // impede de fechar imediatamente
+
+        menu.classList.toggle("h-0")
+        menu.classList.toggle("h-49")
+        menu.classList.toggle("pt-0")
+        menu.classList.toggle("pt-3")
+    })
+
+    // fechar ao clicar fora
+    document.addEventListener("click", (e) => {
+
+        if (!menu.contains(e.target) && !abrirMenu.contains(e.target)) {
+
+            menu.classList.add("h-0")
+            menu.classList.remove("h-49")
+            menu.classList.add("pt-0")
+            menu.classList.remove("pt-3")
+
+        }
+
+    })
+
+
+
+    // Integração do Formulário de Contato
+document.getElementById('form-contato').addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const btnEnviar = document.getElementById('btn-enviar');
+    const textoOriginalBtn = btnEnviar.innerText;
+
+    btnEnviar.innerText = 'Enviando...';
+    btnEnviar.disabled = true;
+
+    const dadosFormulario = {
+        email: document.getElementById('email').value,
+        telefone: document.getElementById('telefone').value,
+        mensagem: document.getElementById('mensagem').value
+    };
+
+    try {
+        const response = await fetch('https://api-ateliepixel.onrender.com/api/contato', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dadosFormulario)
+        });
+
+        if (response.ok) {
+            alert('Mensagem enviada com sucesso!');
+            form.reset(); 
+        } else {
+            alert('Ocorreu um erro ao enviar. Tente novamente.');
+        }
+    } catch (error) {
+        console.error('Erro na requisição:', error);
+        alert('Erro de conexão. O servidor Node está ligado?');
+    } finally {
+        btnEnviar.innerText = textoOriginalBtn;
+        btnEnviar.disabled = false;
+    }
+});
+</script>
+
+</html>

@@ -1,0 +1,50 @@
+.banner, .sobre-nos, .contatos {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+/*banner inicial*/
+.banner {
+    display: flex;
+    max-width: 1200px;
+    height: 450px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gradiente {
+    width: 100%;
+    background: linear-gradient(to bottom, #d9d9d900 40%, #F3FF6C 100%)
+}
+
+.produtos-banner img{
+    max-width: 600px;
+}
+
+.titulo-site p{
+    margin-bottom: 40px;
+}
+
+
+.titulo-site button{
+    color: white;
+    background-color: #C0E25E;
+
+
+    padding: 14px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: -3px 2px 9px 1px rgba(0, 0, 0, 0.186);
+    transition: all;
+    transition-duration: 300ms;
+
+}
+
+.titulo-site button:hover{
+    background-color: #8ba442;
+}

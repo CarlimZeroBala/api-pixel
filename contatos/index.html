@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/output.css">
+   <link rel="icon" type="image/png" href="../imagens/Icones/logo-guia.png">
+
+    <meta name="description" content="Desenvolvimento de sites profissionais, rápidos e otimizados para SEO. Criamos páginas sob medida para empresas que querem mais clientes online.">
+    <title>Ateliê Píxel | Desenvolvimento de Sites Profissionais</title>
+</head>
+<body>
+    <header class="w-full bg-[#530077] absolute fixed top-0 z-40 backdrop-blur lg:border-b lg:border-b-[#9400AE]">
+        <div class="relative flex justify-between max-w-[1300px] items-center mx-auto py-1 pr-5 lg:pr-0 border-b border-b-[#9400AE] lg:border-none">
+            <img src="../imagens/Icones/logo.png" class="h-9">
+
+            <!-- Menu Desktop -->
+            <nav class="hidden lg:flex absolute left-1/2 -translate-x-40 flex gap-8">
+                <a href="/" class="nav-a">Início</a>
+                <a href="/servicos/" class="nav-a">Serviços</a>
+                <a href="/sobre/" class="nav-a">Sobre</a>
+                <a href="/contatos/" class="nav-a">Contatos</a>
+            </nav>
+            
+            <a href="/" class="hidden lg:inline btn ml-auto hover:translate-y-0">Início</a>
+
+            <button id="abrir-menu" class="cursor-pointer w-6 flex flex-col gap-[5px] lg:hidden">
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="w-full bg-[#530077] overflow-hidden transition-all duration-600 ease-in-out h-0 px-5 lg:hidden flex flex-col gap-6" id="menu">
+            <nav class="flex flex-col gap-2">
+                <a href="/" class="nav-a">Início</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/servicos/" class="nav-a">Serviços</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/sobre/" class="nav-a">Sobre</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/contatos/" class="nav-a">Contatos</a>
+            </nav>
+            <a href="/" class="btn">Início</a>
+        </div>
+    </header>
+
+    <!-- Contatos -->
+    <section class="w-full bg-gradient-to-b from-[#5E016F] via-[#5E016F] to-[#1C0024]  h-fit lg::h-[90dvh] py-20">
+        <div class="flex flex-col lg:flex-row max-w-[1100px] h-full mx-auto justify-center items-center">
+            <div class="flex flex-col gap-10 w-[90dvw] md:w-125 lg:px-10">
+                <h1 class="text-[23px] lg:text-[27px]"><span class="destaque">Nos contate</span> pelos canais abaixo</h2>
+                <div class="flex flex-col gap-4">
+                    <a class="bg-[#7800AB] py-4 rounded-4xl px-5 w-fit flex items-center gap-2 contato-btn">
+                        <img src="../imagens/Icones/whatsapp.png" alt="What's App" class="h-5 contato-icon transition-all duration-500 ease-in-out"><p>(61) 0000 0000</p>
+                    </a>
+
+                    <a class="bg-[#7800AB] py-4 rounded-4xl px-5 w-fit flex items-center gap-2 contato-btn">
+                        <img src="../imagens/Icones/email.png" alt="E-mail" class="h-5 contato-icon transition-all duration-500 ease-in-out"><p>contato@ateliepixel.com</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex lg:flex-col h-fit lg:h-120 items-center self-center w-[90dvw] md:w-2/3 py-10 py-5 lg:px-10 lg:w-fit">
+                <div class="lg:w-[2px] lg:h-full h-[2px] w-1/2 bg-[#282828]"></div>
+                <div class="text-[#282828] px-4 lg:p-0">Ou</div>
+                <div class="lg:w-[2px] lg:h-full h-[2px] w-1/2 bg-[#282828]"></div>
+            </div>
+
+            <div class="flex flex-col gap-5 w-[90dvw] lg:w-150 md:w-125 lg:pl-20">
+                <h2 class="text-[23px] lg:text-[27px]">Nos diga <strong class="destaque">o que precisa</strong></h2>
+                <form id="form-contato" class="flex flex-col gap-4 bg-[#7800AB] p-5 rounded-4xl">
+                    <input type="email" id="email" required placeholder="Email*" class="w-full bg-[#1E0422] py-4 px-6 rounded-[34px]">
+                    <input type="tel" id="telefone" required placeholder="Telefone*" class="w-full bg-[#1E0422] py-4 px-6 rounded-[34px]">
+                    <textarea id="mensagem" required placeholder="Mensagem*" class="w-full bg-[#1E0422] py-4 px-6 rounded-[30px] resize-none" rows="5"></textarea>
+                    <button type="submit" id="btn-enviar" class="bg-[#9135A8] shadow shadow-[0_4px_4px_0_#00000025] rounded-4xl px-6 py-2 self-center transition-all duration-600 hover:shadow-none hover:translate-y-[2px]">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <a class="w-50 md:self-center"><img src="../imagens/Icones/logo.png" alt="logo"></a>
+        <div class="md:gap-5 gap-2 pl-3 md:pl-0">
+            <h3>Navegação</h3>
+            <div class="gap-1">
+                <a href="/">Início</a>
+                <a href="/servicos/">Serviços</a>
+                <a href="/sobre/">Sobre</a>
+                <a href="/contatos/">Contatos</a>
+            </div>
+        </div>
+
+        <div class="md:gap-5 gap-2 pl-3 md:pl-0">
+            <h3>Contatos</h3>
+            <div class="gap-1">
+                <div class="flex flex-row gap-1"><img src="../imagens/Icones/whatsapp.png" class="w-4"><p>(61)00000-0000</p></div>
+                <div class="flex flex-row gap-1"><img src="../imagens/Icones/email.png" class="w-4"><p>contato@ateliepixel.com</p></div>
+            </div>
+        </div>
+
+        <a href="/" class="btn h-fit md:self-center ml-3 md:ml-0">Início</a>
+    </footer>
+</body>
+
+<script>
+    const abrirMenu = document.getElementById("abrir-menu")
+    const menu = document.getElementById("menu")
+
+    abrirMenu.addEventListener("click", (e) => {
+        e.stopPropagation() // impede de fechar imediatamente
+
+        menu.classList.toggle("h-0")
+        menu.classList.toggle("h-49")
+        menu.classList.toggle("pt-0")
+        menu.classList.toggle("pt-3")
+    })
+
+    // fechar ao clicar fora
+    document.addEventListener("click", (e) => {
+
+        if (!menu.contains(e.target) && !abrirMenu.contains(e.target)) {
+
+            menu.classList.add("h-0")
+            menu.classList.remove("h-49")
+            menu.classList.add("pt-0")
+            menu.classList.remove("pt-3")
+
+        }
+
+    })
+
+
+    document.getElementById('form-contato').addEventListener('submit', async function(event) {
+    // 1. Trava o recarregamento padrão da página com força
+    event.preventDefault();
+
+    const form = event.target;
+    const btnEnviar = document.getElementById('btn-enviar');
+    const textoOriginalBtn = btnEnviar.innerText;
+
+    // Muda o texto para mostrar que está pensando
+    btnEnviar.innerText = 'Enviando...';
+    btnEnviar.disabled = true;
+
+    const dadosFormulario = {
+        email: document.getElementById('email').value,
+        telefone: document.getElementById('telefone').value,
+        mensagem: document.getElementById('mensagem').value
+    };
+
+    try {
+        const response = await fetch('https://api-ateliepixel.onrender.com/api/contato', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dadosFormulario)
+        });
+
+        if (response.ok) {
+            // Efeito visual de sucesso no botão (sem pop-up!)
+            btnEnviar.innerText = '✔ Enviado!';
+            btnEnviar.style.backgroundColor = '#22c55e'; // Verde vibrante
+            form.reset(); // Limpa os campos
+
+            // Aguarda 3 segundos e volta o botão ao estado original roxo
+            setTimeout(() => {
+                btnEnviar.innerText = textoOriginalBtn;
+                btnEnviar.style.backgroundColor = '';
+                btnEnviar.disabled = false;
+            }, 3000);
+
+        } else {
+            alert('Ocorreu um erro ao enviar. Tente novamente.');
+            btnEnviar.innerText = textoOriginalBtn;
+            btnEnviar.disabled = false;
+        }
+    } catch (error) {
+        console.error('Erro na requisição:', error);
+        alert('Erro de conexão. O servidor Node está ligado?');
+        btnEnviar.innerText = textoOriginalBtn;
+        btnEnviar.disabled = false;
+    }
+});
+</script>
+</html>

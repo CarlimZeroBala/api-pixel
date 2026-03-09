@@ -1,0 +1,334 @@
+@import "tailwindcss";
+
+@theme {
+    --color-fundo: #1C0024;
+    --font-display: "Sora";
+    --text-sm: 0.775rem;
+
+}
+
+@layer base{
+    html{
+        @apply
+        overflow-x-hidden
+    }
+
+    body{
+        @apply
+        text-white
+        bg-fundo
+        font-display
+        text-sm
+    }
+
+    h1{
+        @apply 
+        text-[27px]
+    }
+
+    h2{
+        @apply
+        lg:text-[25px]
+        text-[22px]
+    }
+
+    h3{
+        @apply
+        text-[18px]
+    }
+
+    a{
+        @apply
+        cursor-pointer
+    }
+
+    button{
+        @apply
+        cursor-pointer
+    }
+}
+
+@layer components{
+
+    /* Botões */
+    .btn{
+        @apply
+        w-fit
+        bg-[#AD00D9]
+        border
+        shadow-[0_0_23px_0_#CD68FF]
+        border-[#E17FFF]
+        rounded-2xl
+        px-4
+        lg:px-10
+        py-[3px]
+        cursor-pointer
+        transition
+        ease-in-out
+        duration-500
+        text-nowrap
+    }
+
+    .btn:hover{
+        @apply
+        bg-[#cc00ff]
+        shadow-[0_0_23px_0_#E4AEFF]
+        -translate-y-[3px]
+    }
+
+    /* Bold */
+    .destaque {
+    background: linear-gradient(to top, #8866EE, #CD99FB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+ 
+    /* Header */
+    .cabecalho{
+        @apply
+        w-full
+    }
+    .cabecalho-separador{
+        @apply
+        flex
+        justify-between
+
+    }
+
+    footer{
+        @apply
+        flex
+        flex-col
+        md:flex-row
+        max-w-[1300px]
+        mx-auto
+        justify-between
+        py-5
+        h-100
+        md:h-fit
+    }
+
+    footer div{
+        @apply
+        flex
+        flex-col
+    }
+
+    .nav-a{
+        @apply
+        w-fit
+        transition-all 
+        ease-in-out 
+        duration-300 
+        hover:[text-shadow:0_0_6px_#CD68FF,0_0_12px_#CD68FF]
+    }
+
+    .menu-active{
+        @apply
+        h-49
+        opacity-100
+    }
+
+    /* Cards da Sessão Funciona */
+    .card-funciona{
+        @apply
+        flex
+        flex-col
+        h-full
+        bg-gradient-to-t
+        from-[#B500E2]
+        via-[#63007C]
+        to-[#63007C]
+        items-start
+        lg:items-center
+        w-full
+        max-w-100
+        justify-between
+        px-4
+        lg:px-5
+        py-5
+        shadow
+        shadow-[15px_15px_3px_0_#00000048]
+        transition-[shadow_transform]
+        duration-600
+        ease-in-out
+        lg:w-45
+    }
+
+    .card-funciona:hover{
+        @apply
+        shadow-none
+        translate-x-[2px]
+        translate-y-[2px]
+        
+    }
+
+    .card-funciona h3{
+        @apply
+        text-center
+    }
+    .card-funciona img{
+        @apply
+        h-10
+    }
+    .card-funciona .btn{
+        @apply
+        bg-[#63007C]
+        text-nowrap
+        lg:px-8
+        lg:mt-0
+        mt-5
+    }
+
+    .card-vantagens {
+        @apply
+        cursor-pointer
+        h-fit 
+        my-auto 
+        bg-[#3D004876] 
+        border 
+        border-[#CD68FF] 
+        rounded-[14px] 
+        lg:w-79
+        w-full
+        py-4
+        lg:pl-5
+        pl-2
+        flex flex-col
+        gap-1
+        transition-all
+        ease-in-out
+        duration-800
+    }
+
+    .card-vantagens h3{
+        @apply
+        md:text-[18px]
+        text-[14px]
+    }
+
+    .conteudo {
+        @apply opacity-0 max-h-0 overflow-hidden transition-all ease-in-out duration-800;
+    }
+
+    .card-vantagens.active .conteudo {
+        @apply opacity-100 max-h-40;
+    }
+
+    .card-funciona-servicos{
+        @apply
+        flex flex-col 
+        lg:max-w-72 
+        h-90
+        max-w-65
+        w-65
+        justify-between items-center 
+        bg-gradient-to-b from-[#63007C] via-[#63007C] to-[#B500E2] 
+        py-8 px-6
+        transition-all ease-in-out duration-600
+        hover:shadow hover:shadow-[15px_15px_3px_0_#00000048] hover:-translate-[2px]
+    }
+
+    /* Cards da Sessão Diferenciais */
+    .card-diferencial{
+        @apply
+        bg-[#530077]
+        rounded-xl
+        border
+        border-[#CD68FF]
+        flex
+        py-3
+        px-3
+        w-[220px]
+        h-50
+        gap-2
+        snap-center
+        shrink-0
+        lg:w-64
+        lg:h-45;
+    }
+
+    .card-diferencial div{
+        @apply
+        flex
+        flex-col
+        justify-between
+    }
+
+    .card-diferencial h3{
+        @apply
+        lg:w-50 w-fit text-[14px]
+    }
+
+    ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .circulo{
+        @apply
+        mt-[6px] 
+        w-[23px]
+        h-[8px] 
+        rounded-[999px] 
+        bg-gradient-to-t from-[#8866EE] to-[#CD99FB]
+    }
+    
+
+    .a-dif{
+        @apply
+        flex
+        items-center
+
+    }
+
+    .seta-dif{
+        @apply
+        transition-all
+        pl-2
+        duration-300
+    }
+
+    .a-dif:hover .saiba-dif{
+        @apply
+        underline
+    }
+
+    .a-dif:hover .seta-dif{
+        @apply
+        translate-x-1
+    }
+
+    .contato-btn{
+        @apply
+        bg-[#3D0048] 
+        py-4 rounded-4xl 
+        px-5 w-fit 
+        flex 
+        items-center 
+        gap-2 
+        shadow shadow-[0_4px_4px_0_#00000025] rounded-4xl
+        transition-all duration-600 hover:shadow-none hover:translate-y-[2px]
+    }
+
+
+
+    .img-host{
+        @apply
+        flex justify-center 
+        w-15 h-15 
+        md:w-28 md:h-28 
+        items-center 
+        rounded-xl 
+        shadow-[0_0_50px_0_#FFFFFF25] 
+        bg-white
+    }
+
+    .img-host img{
+        @apply
+        w-10
+        md:w-fit
+    }
+}

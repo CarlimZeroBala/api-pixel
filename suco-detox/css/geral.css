@@ -1,0 +1,77 @@
+body {
+    background-color: #FFFCC9;
+    font-family: roboto;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    user-drag: none;
+}
+
+h1 {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-size: 65px;
+    margin: 0;
+}
+
+p , h3, a, button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button{
+    color: white;
+    background-color: #C0E25E;
+
+    font-weight: bold;
+    padding: 14px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: -3px 2px 9px 1px rgba(0, 0, 0, 0.186);
+    transition: all;
+    transition-duration: 300ms;
+
+    cursor: pointer;
+
+}
+
+.button:hover{
+    background-color: #8ba442;
+}
+
+.aviso {
+    color: white;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial;
+    z-index: 999;
+}
+
+button {
+    cursor: pointer;
+}

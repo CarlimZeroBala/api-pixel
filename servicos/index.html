@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="icon" type="image/png" href="../imagens/Icones/logo-guia.png">
+
+    <meta name="description" content="Desenvolvimento de sites profissionais, rápidos e otimizados para SEO. Criamos páginas sob medida para empresas que querem mais clientes online.">
+    <title>Ateliê Píxel | Desenvolvimento de Sites Profissionais</title>
+</head>
+<body>
+    <header class="w-full bg-[#530077] absolute fixed top-0 z-40 backdrop-blur lg:border-b lg:border-b-[#9400AE]">
+        <div class="relative flex justify-between max-w-[1300px] items-center mx-auto py-1 pr-5 lg:pr-0 border-b border-b-[#9400AE] lg:border-none">
+            <img src="../imagens/Icones/logo.png" class="h-9">
+
+            <!-- Menu Desktop -->
+            <nav class="hidden lg:flex absolute left-1/2 -translate-x-40 flex gap-8">
+                <a href="/" class="nav-a">Início</a>
+                <a href="/servicos/" class="nav-a">Serviços</a>
+                <a href="/sobre/" class="nav-a">Sobre</a>
+                <a href="/contatos/" class="nav-a">Contatos</a>
+            </nav>
+            
+            <a href="/contatos/" class="hidden lg:inline btn ml-auto hover:translate-y-0">Entre em Contato</a>
+
+            <button id="abrir-menu" class="cursor-pointer w-6 flex flex-col gap-[5px] lg:hidden">
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+                <div class="w-full h-[4px] bg-[#AD00D9] border border-[#E17FFF]"></div>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="w-full bg-[#530077] overflow-hidden transition-all duration-600 ease-in-out h-0 px-5 lg:hidden flex flex-col gap-6" id="menu">
+            <nav class="flex flex-col gap-2">
+                <a href="/" class="nav-a">Início</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/servicos/" class="nav-a">Serviços</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/sobre/" class="nav-a">Sobre</a>
+                <div class="w-full h-[1px] bg-[#9400AE] opacity-50"></div>
+                <a href="/contatos/" class="nav-a">Contatos</a>
+            </nav>
+            <a href="contatos.html" class="btn">Entre em Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="flex flex-col px-10 min-h-130 lg:flex-row max-w-[1200px] mx-auto h-[100dvh] lg:h-[55dvh] lg:min-h-0 items-center justify-center">
+        <div class="relative lg:h-45 w-full lg:w-[410px] flex flex-col items-center lg:items-start justify-between">
+            <h1 class="text-center lg:text-start">Muito além do design. <span class="destaque">Estratégia aplicada.</span></h1>
+            <p class="py-3 text-center lg:text-start">Criamos sites institucionais, landing pages e soluções personalizadas <b>pro seu negócio.</b></p>
+            <img src="../imagens/quadrados.png" class="hidden lg:inline absolute -left-68 -top-6">
+            <a href="sobre.html" class="btn mt-2 hidden lg:flex">Sobre Nós</a>
+        </div>
+        
+        <div class="flex max-w-[640px] justify-center">
+            <img src="../imagens/imagem-servicos.png" class=" w-90">
+        </div>
+
+        <a href="sobre.html" class="btn mt-2  lg:hidden">Sobre Nós</a>
+    </section>
+
+    <!-- Vantagens -->
+    <section class="flex flex-col lg:max-w-[1170px] max-w-[90dvw] mx-auto">
+        <ul class="hidden lg:inline">
+            <div class="w-full h-[1px] bg-[#B500E2] mb-4"></div>
+
+            <!-- Vantagem 1 -->
+            <li class="grid grid-cols-[2fr_2fr_1fr] gap-10 lg:items-center">
+                <div class="h-fit">
+                    <h2>Mais Visibilidade</h2>
+                </div>
+
+                <p class="w-80">
+                    Amplie seu alcance digital e seja encontrado por novos clientes diariamente.
+                </p>
+
+                <div class="flex flex-col justify-between h-18">
+                    <p><span class="text-[#CD68FF]">→</span> Alcance ampliado</p>
+                    <p><span class="text-[#CD68FF]">→</span> Presença online</p>
+                    <p><span class="text-[#CD68FF]">→</span> Tráfego orgânico</p>
+                </div>
+
+            </li>
+            <div class="w-full h-[1px] bg-[#B500E2] my-4"></div>
+
+            <!-- Vantagem 2 -->
+            <li class="lg:grid lg:grid-cols-[2fr_2fr_1fr] flex flex-col gap-10 lg:items-center">
+                <div class="h-fit">
+                    <h2 class="text-nowrap">Credibilidade Profissional</h2>
+                </div>
+
+                <p class="w-80">
+                    Transmita mais confiança ao apresentar sua empresa de forma estruturada.
+                </p>
+
+                <div class="flex flex-col justify-between h-18">
+                    <p><span class="text-[#CD68FF]">→</span> Autoridade digital</p>
+                    <p><span class="text-[#CD68FF]">→</span> Imagem profissional</p>
+                    <p><span class="text-[#CD68FF]">→</span> Marca forte</p>
+                </div>
+
+            </li>
+
+            <div class="w-full h-[1px] bg-[#B500E2] my-4"></div>
+
+            <!-- Vantagem 3 -->
+            <li class="lg:grid lg:grid-cols-[2fr_2fr_1fr] flex flex-col gap-10 lg:items-center">
+                <div class="h-fit">
+                    <h2>Geração de Clientes</h2>
+                </div>
+
+                <p class="w-80">
+                    Converta visitantes em oportunidades reais com estratégias bem definidas.
+                </p>
+
+                <div class="flex flex-col justify-between h-18">
+                    <p><span class="text-[#CD68FF]">→</span> Captação leads</p>
+                    <p><span class="text-[#CD68FF]">→</span> Mais contatos</p>
+                    <p><span class="text-[#CD68FF]">→</span> Vendas online</p>
+                </div>
+
+            </li>
+            <div class="w-full h-[1px] bg-[#B500E2] my-4"></div>
+        </ul>
+
+
+        <!-- Vantagens Celular -->
+        <ul class="inline lg:hidden">
+            <div class="w-full h-[1px] bg-[#B500E2] mb-4"></div>
+
+            <!-- Vantagem 1 -->
+            <li class="flex items-center w-full justify-between py-4">
+                <div class="w-50">
+                    <div class="pb-2">
+                        <h2>Mais Visibilidade</h2>
+                    </div>
+
+                    <p class="w-full">
+                        Amplie seu alcance digital e seja encontrado por novos clientes diariamente.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-between h-23 w-37">
+                    <p><span class="text-[#CD68FF]">→</span> Alcance ampliado</p>
+                    <p><span class="text-[#CD68FF]">→</span> Presença online</p>
+                    <p><span class="text-[#CD68FF]">→</span> Tráfego orgânico</p>
+                </div>
+
+            </li>
+            <div class="w-full h-[1px] bg-[#B500E2] my-4"></div>
+
+            <!-- Vantagem 2 -->
+            <li class="flex items-center w-full justify-between">
+                <div class="w-45">
+                    <h2 class="pb-2">Credibilidade Profissional</h2>
+
+                    <p class="w-full">
+                        Transmita mais confiança ao apresentar sua empresa de forma estruturada.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-between h-23 w-37">
+                    <p><span class="text-[#CD68FF]">→</span> Autoridade digital</p>
+                    <p><span class="text-[#CD68FF]">→</span> Imagem profissional</p>
+                    <p><span class="text-[#CD68FF]">→</span> Marca forte</p>
+                </div>
+
+            </li>
+
+            <div class="w-full h-[1px] bg-[#B500E2] my-4"></div>
+
+            <!-- Vantagem 3 -->
+            <li class="flex items-center w-full justify-between">
+                <div class="w-45">
+                    <h2 class="pb-2">Geração de Clientes</h2>
+
+                    <p class="w-fulll">
+                        Converta visitantes em oportunidades reais com estratégias bem definidas.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-between h-23 w-37">
+                    <p><span class="text-[#CD68FF]">→</span> Captação leads</p>
+                    <p><span class="text-[#CD68FF]">→</span> Mais contatos</p>
+                    <p><span class="text-[#CD68FF]">→</span> Vendas online</p>
+                </div>
+
+            </li>
+            <div class="w-full h-[1px] bg-[#B500E2] my-4"></div>
+        </ul>
+    </section>
+
+    <!-- Funciona -->
+    <section class="flex flex-col mx-auto max-w-[1000px] gap-8 py-20">
+        <div class="w-72 mx-auto md:mx-0 ">
+            <h2>Como <span class="destaque">Funciona</span></h2>
+            <p>Entenda como podemos te ajudar com seu negócio.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row w-full justify-between h-fit lg:h-100 items-center">
+            <!-- Card 1 -->
+            <div class="card-funciona-servicos">
+                <div class="flex flex-col items-center gap-4">
+                    <img src="../imagens/Icones/funciona-card1.png" class="w-[44px]" draggable="false">
+                    <h3 class="text-center">Diagnóstico e planejamento</h3>
+                </div>
+                <p>
+                    Realizamos uma reunião 
+                    estratégica para compreender seu 
+                    negócio, público e objetivos digitais.
+                </p>
+                <p>
+                    Mapeamos funcionalidades, 
+                    referências e definimos metas 
+                    claras e a estratégia antes de 
+                    qualquer criação.
+                </p>
+            </div>
+
+            <img src="../imagens/Icones/seta.png" class="scale-x-[-1] rotate-90 md:rotate-0 brightness-0 invert" draggable="false">
+
+            <!-- Card 2 -->
+            <div class="card-funciona-servicos">
+                <div class="flex flex-col items-center gap-4">
+                    <img src="../imagens/Icones/funciona-card2.png" class="w-[44px]" draggable="false">
+                    <h3 class="text-center">Protótipo & Design</h3>
+                </div>
+                <p>
+                    Criamos um protótipo visual estratégico, 
+                    alinhado à identidade e 
+                    posicionamento da sua marca.
+                </p>
+                <p class="pb-5">
+                    Desenvolvemos uma experiência intuitiva, 
+                    moderna e orientada à conversão.
+                </p>
+            </div>
+
+            <img src="../imagens/Icones/seta.png" class="scale-x-[-1] rotate-90 md:rotate-0 brightness-0 invert" draggable="false">
+
+            <!-- Card 3 -->
+            <div class="card-funciona-servicos">
+                <div class="flex flex-col items-center gap-4">
+                    <img src="../imagens/Icones/funciona-card3.png" class="w-[44px]">
+                    <h3 class="text-center">Validação & Refinamento</h3>
+                </div>
+                <p class="pb-11">
+                    Apresentamos o projeto 
+                    completo para avaliação 
+                    detalhada e alinhamento final.
+                </p>
+                <p class="pb-6">
+                    Aplicamos ajustes 
+                    estratégicos para 
+                    garantir resultado e 
+                    satisfação.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Portifólio -->
+    <div class="w-full h-full bg-[url('../imagens/bg-quadrados.png')] bg-cover bg-center bg-no-repeat">
+        <section class="flex flex-col md:flex-row h-200 md:h-170 lg:max-w-[1000px] max-w-[90dvw] mx-auto justify-between items-start lg:items-center py-30">
+            <div class="h-38 flex flex-col justify-between w-80 relative pb-10 md:pb-0">
+                <h2>Nosso <span class="destaque">Portifólio</span></h2>
+                <p>Projetos que unem estratégia, design e performance</p>
+                <p>
+                    Aplicamos técnica e criatividade em cada site desenvolvido para transformar ideias <br>em presença digital sólida.
+                </p>
+                <img src="../imagens/quadrados.png" class="absolute -left-68 -top-6 hidden md:inline">
+            </div>
+
+            <!-- Sites -->
+            <div class="hidden lg:flex flex-col h-full justify-between">
+
+                <!-- Site 1 -->
+                <div class="bg-[#13243A] w-160 h-30 relative overflow-hidden transition-all ease-in-out duration-500 hover:-translate-x-3">
+                    <a href="/advocacia/" class="btn absolute left-3 top-12 px-6 bg-[#63007C]">Conheça o Site</a>
+                    <a href="/advocacia/" class="absolute left-47 top-7"><img src="../imagens/logo-1.png"></a>
+                    <img src="../imagens/bg-site-1.png" class="object-cover h-30 absolute right-0">
+                </div>
+
+                <!-- Site 2 -->
+                <div class="bg-[#EDE893] w-160 h-30 relative overflow-hidden transition-all ease-in-out duration-500 hover:-translate-x-3">
+                    <a href="/suco-detox/" class="btn absolute left-3 top-12 px-6">Conheça o Site</a>
+                    <a href="/suco-detox/" class="absolute left-55 top-0"><img src="../imagens/logo-2.png" class="h-30"></a>
+                    <img src="../imagens/bg-site-2.png" class="object-cover h-36 absolute right-0">
+                </div>
+
+                <!-- Site 3 -->
+                <div class="bg-[#19571F] w-160 h-30 relative overflow-hidden transition-all ease-in-out duration-500 hover:-translate-x-3">
+                    <a href="/fotografo/" class="btn absolute left-3 top-12 px-6 bg-[#63007C]">Conheça o Site</a>
+                    <a href="/fotografo/" class="absolute left-58 -top-2"><img src="../imagens/logo-3.png" class="h-35"></a>
+                    <img src="../imagens/bg-site-3.png" class="object-cover h-30 absolute right-0">
+                </div>
+            </div>
+
+            <!-- Sites Mobile -->
+             <div class="flex flex-col lg:hidden w-full gap-8">
+
+                <!-- Site 1 -->
+                <div class="flex items-center w-fit overflow-hidden justify-between bg-[#13243A] mx-auto w-full h-30">
+                    <div class="flex flex-col w-2/3 md:w-fit h-full justify-between items-center pl-5">
+                        <img src="../imagens/logo-1.png" class="w-fit object-cover h-10 mt-6">
+                        
+                        <a class="btn mb-2">Conheça o Site</a>
+                        
+                    </div>
+                    <img src="../imagens/bg-site-1.png" class="object-cover object-center h-full">
+                </div>
+
+                <!-- Site 2 -->
+                <div class="flex items-center w-fit overflow-hidden justify-between bg-[#EDE893] mx-auto  w-full h-30">
+                    <div class="flex flex-col w-2/3 md:w-fit h-full justify-between items-center pl-5">
+                        <img src="../imagens/logo-2.png" class="w-20 object-cover h-15 mt-3">
+                        
+                        <a class="btn mb-2">Conheça o Site</a>
+                        
+                    </div>
+                    <img src="../imagens/bg-site-2.png" class="object-cover object-center h-full">
+                </div>
+
+                <!-- Site 3 -->
+                <div class="flex items-center w-fit overflow-hidden justify-between bg-[#19571F] mx-auto  w-full h-30">
+                    <div class="flex flex-col w-2/3 md:w-fit h-full justify-between items-center pl-5">
+                        <img src="../imagens/logo-3.png" class="w-22 object-cover h-20">
+                        
+                        <a class="btn mb-2">Conheça o Site</a>
+                        
+                    </div>
+                    <img src="../imagens/bg-site-3.png" class="object-cover object-center h-full">
+                </div>
+
+
+             </div>
+        </section>
+
+
+        <!-- Host -->
+        <section class="flex flex-col-reverse items-center lg:items-start lg:flex-row max-w-[1100px] justify-between mx-auto h-fit py-10 gap-10 lg:gap-0">
+            <div class="grid grid-cols-4 gap-x-3 gap-y-5 lg:gap-x-10 lg:gap-y-10">
+                <div class="img-host"><img src="../imagens/host-1.png"></div>
+                <div class="img-host"><img src="../imagens/host-2.png"></div>
+                <div class="img-host"><img src="../imagens/host-3.png"></div>
+                <div class="img-host"><img src="../imagens/host-4.png"></div>
+                <div class="img-host"><img src="../imagens/host-5.png"></div>
+                <div class="img-host"><img src="../imagens/host-6.png"></div>
+                <div class="img-host"><img src="../imagens/host-7.png"></div>
+                <div class="img-host"><img src="../imagens/host-8.png"></div>
+
+            </div>
+
+            <div class="w-88 md:w-140 lg:w-2/5 h-full flex flex-col justify-between px-10 gap-4">
+                <h2>Contratamos seu <span class="destaque">Host</span></h2>
+                <p>Contratamos o host ideal para o seu site, garantindo segurança e bom desempenho</p>
+                <p>
+                    Nossa equipe seleciona e contrata a hospedagem onde seu site ficará armazenado.
+                    Assim, ele permanece online, estável e protegido.
+
+                </p>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Funcionalidades -->
+    <section class="flex flex-col lg:flex-row md:max-w-[1100px] max-w-[90dvw] mx-auto py-30 items-center justify-between gap-5">
+        <div class="flex flex-col justify-between md:h-65 h-fit md:w-140 w-fit">
+            <div class="flex flex-col h-fit pb-10 lg:pb-0">
+                <h2><strong class="destaque">Recursos</strong> Inteligentes para Seu Negócio</h2>
+                <p>ferramentas disponiveis para você.</p>
+            </div>
+
+            <ul class="grid grid-cols-[1fr_1fr] h-fit md:h-40 gap-7 md:gap-0">
+
+                <div class="flex items-center h-fit">
+                    <div class="w-[8px] h-[8px] bg-gradient-to-t from-[#8866EE] to-[#CD99FB] rounded-4xl mr-2"></div>
+                    <li>Cardápio digital interativo </li>
+                </div>
+                <div class="flex items-center h-fit">
+                    <div class="w-[8px] h-[8px] bg-gradient-to-t from-[#8866EE] to-[#CD99FB] rounded-4xl mr-2"></div>
+                    <li>Sistema de agendamento online</li>
+                </div>
+                <div class="flex items-center h-fit">
+                    <div class="w-[8px] h-[8px] bg-gradient-to-t from-[#8866EE] to-[#CD99FB] rounded-4xl mr-2"></div>
+                    <li>Loja virtual (e-commerce)</li>
+                </div>
+
+                <div class="flex items-center h-fit">
+                    <div class="w-[8px] h-[8px] bg-gradient-to-t from-[#8866EE] to-[#CD99FB] rounded-4xl mr-2"></div>
+                    <li>Sistema de avaliações/depoimentos</li>
+                </div>
+                <div class="flex items-center h-fit">
+                    <div class="w-[8px] h-[8px] bg-gradient-to-t from-[#8866EE] to-[#CD99FB] rounded-4xl mr-2"></div>
+                    <li>automatização de contato via email</li>
+                </div>
+                <div class="flex items-center h-fit">
+                    <div class="w-[8px] h-[8px] bg-gradient-to-t from-[#8866EE] to-[#CD99FB] rounded-4xl mr-2"></div>
+                    <li>Integração com meios de pagamento</li>
+                </div>
+                <div class="flex items-center h-fit">
+                    <div class="w-[8px] h-[8px] bg-gradient-to-t from-[#8866EE] to-[#CD99FB] rounded-4xl mr-2"></div>
+                    <li>Sistema de pedidos online</li>
+                </div>
+                <div class="flex items-center h-fit">
+                    <div class="w-[8px] h-[8px] bg-gradient-to-t from-[#8866EE] to-[#CD99FB] rounded-4xl mr-2"></div>
+                    <li>Integração com redes sociais</li>
+                </div>
+            </ul>
+        </div>
+
+        <img src="../imagens/bg-funcionalidades.png" class="object-cover lg:h-100 lg:w-1/2 md:w-2/3 w-full">
+
+    </section>
+
+    <!-- Contatos -->
+    <section class="w-full bg-[#7800AB] py-10">
+        <div class="flex flex-col-reverse items-center lg:items-start lg:flex-row max-w-[1100px] mx-auto justify-between">
+            <div class="flex flex-col items-center lg:items-start gap-10 w-75 px-10">
+                <h2 class="text-[20px] w-fit text-center lg:text-start"><b>Nos contate</b> pelos canais abaixo</h2>
+                <div class="flex flex-col gap-4 items-center lg:items-start">
+                    <a class="contato-btn">
+                        <img src="../imagens/Icones/whatsapp.png" alt="What's App" class="h-5 contato-icon transition-all duration-500 ease-in-out"><p>(61) 0000 0000</p>
+                    </a>
+
+                    <a class="contato-btn">
+                        <img src="../imagens/Icones/email.png" alt="E-mail" class="h-5 contato-icon transition-all duration-500 ease-in-out"><p>contato@ateliepixel.com</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex lg:flex-col items-center self-center w-2/3 py-10 lg:w-fit">
+                <div class="lg:w-[2px] lg:h-20 h-[2px] w-1/2 bg-[#282828]"></div>
+                <div class="text-[#282828] px-4 lg:p-0">Ou</div>
+                <div class="lg:w-[2px] lg:h-20 h-[2px] w-1/2 bg-[#282828]"></div>
+            </div>
+
+            <div class="flex flex-col gap-5 w-85">
+                <h2 class="text-[20px] w-fit self-center lg:self-start">Nos diga <b>o que precisa</b></h2>
+                <form id="form-contato" class="flex flex-col gap-2">
+                    <input type="email" id="email" required placeholder="Email*" class="w-full bg-[#3D0048] py-3 px-6 rounded-[34px]">
+                    <input type="tel" id="telefone" required placeholder="Telefone*" class="w-full bg-[#3D0048] py-3 px-6 rounded-[34px]">
+                    <textarea name="mensagem" id="mensagem" required placeholder="Mensagem*" class="w-full bg-[#3D0048] py-3 px-6 rounded-[30px] resize-none" rows="4"></textarea>
+                    <button type="submit" id="btn-enviar" class="bg-[#9135A8] shadow shadow-[0_4px_4px_0_#00000025] rounded-4xl px-6 py-2 self-center transition-all duration-600 hover:shadow-none hover:translate-y-[2px]">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <a class="w-50 md:self-center"><img src="../imagens/Icones/logo.png" alt="logo"></a>
+        <div class="md:gap-5 gap-2 pl-3 md:pl-0">
+            <h3>Navegação</h3>
+            <div class="gap-1">
+                <a href="/">Início</a>
+                <a href="/servicos/">Serviços</a>
+                <a href="/sobre/">Sobre</a>
+                <a href="/contatos/">Contatos</a>
+            </div>
+        </div>
+
+        <div class="md:gap-5 gap-2 pl-3 md:pl-0">
+            <h3>Contatos</h3>
+            <div class="gap-1">
+                <div class="flex flex-row gap-1"><img src="../imagens/Icones/whatsapp.png" class="w-4"><p>(61)00000-0000</p></div>
+                <div class="flex flex-row gap-1"><img src="../imagens/Icones/email.png" class="w-4"><p>contato@ateliepixel.com</p></div>
+            </div>
+        </div>
+
+        <a href="/contatos/" class="btn h-fit md:self-center ml-3 md:ml-0">Entre em Contato</a>
+    </footer>
+    
+</body>
+
+<script>
+    const abrirMenu = document.getElementById("abrir-menu")
+    const menu = document.getElementById("menu")
+
+    abrirMenu.addEventListener("click", (e) => {
+        e.stopPropagation() // impede de fechar imediatamente
+
+        menu.classList.toggle("h-0")
+        menu.classList.toggle("h-49")
+        menu.classList.toggle("pt-0")
+        menu.classList.toggle("pt-3")
+    })
+
+    // fechar ao clicar fora
+    document.addEventListener("click", (e) => {
+
+        if (!menu.contains(e.target) && !abrirMenu.contains(e.target)) {
+
+            menu.classList.add("h-0")
+            menu.classList.remove("h-49")
+            menu.classList.add("pt-0")
+            menu.classList.remove("pt-3")
+
+        }
+
+    })
+
+
+
+    // Integração do Formulário de Contato
+document.getElementById('form-contato').addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const btnEnviar = document.getElementById('btn-enviar');
+    const textoOriginalBtn = btnEnviar.innerText;
+
+    btnEnviar.innerText = 'Enviando...';
+    btnEnviar.disabled = true;
+
+    const dadosFormulario = {
+        email: document.getElementById('email').value,
+        telefone: document.getElementById('telefone').value,
+        mensagem: document.getElementById('mensagem').value
+    };
+
+    try {
+        const response = await fetch('https://api-ateliepixel.onrender.com/api/contato', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dadosFormulario)
+        });
+
+        if (response.ok) {
+            alert('Mensagem enviada com sucesso!');
+            form.reset(); 
+        } else {
+            alert('Ocorreu um erro ao enviar. Tente novamente.');
+        }
+    } catch (error) {
+        console.error('Erro na requisição:', error);
+        alert('Erro de conexão. O servidor Node está ligado?');
+    } finally {
+        btnEnviar.innerText = textoOriginalBtn;
+        btnEnviar.disabled = false;
+    }
+});
+</script>
+</html>

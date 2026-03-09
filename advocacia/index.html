@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Almeida & Castro - Advocacia Especializa</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/input.css">
+
+</head>
+<body>
+    <header class="absolute bg-cinza w-full min-h-[93px] flex flex-col justify-center z-10">
+        <div class="flex max-w-[1380px] w-full mx-auto justify-between items-center gap-5 px-10">
+            <img src="imagens/logo.png" class="w-50">
+            <nav class="flex items-center lg:justify-between justify-end max-w-[600px] w-full">
+                <a class="lg:block hidden">Início</a>
+                <a class="lg:block hidden">Sobre</a>
+                <a class="lg:block hidden">Advogados</a>
+                <a class="lg:block hidden">Depoimentos</a>
+                
+                <a class="btn lg:inline hidden">Entre em Contato</a>
+
+                <div class="lg:hidden inline w-8 h-6 cursor-pointer pointer-events-auto" id="abrir-menu">
+                    <div class="w-8 h-6 flex flex-col justify-between">
+                        <div class="w-full h-[3px] bg-white"></div>
+                        <div class="w-full h-[3px] bg-white"></div>
+                        <div class="w-full h-[3px] bg-white"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="flex flex-col justify-between py-0 pl-3 transition-all duration-400 ease-in-out w-200 h-0 overflow-hidden" id="menu">
+
+            <div class="group flex w-fit h-fit cursor-pointer">
+                <div class="w-[2px] transition-colors duration-300 h-full bg-white barra group-hover:bg-dourado"></div>
+                <a class="pl-2">Início</a>
+            </div>
+
+            
+            <div class="group flex w-fit h-fit cursor-pointer">
+                <div class="w-[2px] transition-colors duration-300 h-full bg-white barra group-hover:bg-dourado"></div>
+                <a class="pl-2">Sobre</a>
+            </div>
+            
+            <div class="group flex w-fit h-fit cursor-pointer">
+                <div class="w-[2px] transition-colors duration-300 h-full bg-white barra group-hover:bg-dourado"></div>
+                <a class="pl-2">Advogados</a>
+            </div>
+
+            <div class="group flex w-fit h-fit cursor-pointer">
+                <div class="w-[2px] transition-colors duration-300 h-full bg-white barra group-hover:bg-dourado"></div>
+                <a class="pl-2">Depoimentos</a>
+            </div>
+            
+            <a class="btn">Entre em Contato</a>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="w-full h-160 pt-10 lg:h-140 flex items-end bg-[url('../imagens/bg-hero.png')] bg-cover bg-center bg-no-repeat bg-fixed">
+
+            <div class="flex flex-col justify-between max-w-[90dvw] md:max-w-[1380px] w-full mx-auto h-full lg:h-100 mb-10 px-0 md:px-10">
+                <div class="lg:my-auto mt-35">
+                    <div>
+                        <h1 class="text-dourado">Almeida & Castro</h1>
+                        <p>Advocacia Geral</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-5 pb-3 mt-10">
+                        <a class="btn">Conheça Nossos Advogados</a>
+                        <a class="btn">Entre em Contato</a>
+                    </div>
+                </div>
+
+                <div class="max-w-220 w-fit lg:w-full flex flex-col text-center lg:flex-row gap-10 lg:gap-0 lg:mx-auto justify-between text-nowrap">
+                    <div class="border border-black border-2 w-fit lg:w-70 rounded-lg p-3 px-6 bg-[#13243A75]">+300 casos atendidos</div>
+                    <div class="border border-black border-2 w-fit lg:w-70 rounded-lg p-3 px-6 bg-[#13243A75]">+10 anos de atuação jurídica</div>
+                    <div class="border border-black border-2 w-fit lg:w-70 rounded-lg p-3 px-6 bg-[#13243A75]">95% de satisfação dos clientes</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section class="bg-branco text-black py-16">
+            <div class="flex flex-col-reverse md:flex-row max-w-[1100px] mx-auto px-10 h-fit justify-between items-center">
+                <img src="imagens/img-sobre.png" class=" md:h-[400px] h-2/3 shadow-[30px_-30px] shadow-cinza mr-[50px] mt-15">
+
+                <div class="flex flex-col h-fit md:h-full gap-4">
+                    <div class="relative text-branco">
+                        <div class="items-center relative z-10 bg-cinza pr-4">
+                            <h2 class="pl-2 whitespace-nowrap">Sobre</h2>
+                        </div>
+
+                        <span class="
+                            absolute
+                            left-full
+                            top-0
+                            h-[36px]
+                            w-screen
+                            bg-cinza
+                        "></span>
+                    </div>
+
+                    <p>Advocacia especializada em múltiplas áreas do Direito</p>
+                    <p class="max-w-140">O escritório Almeida & Castro é formado por dois advogados 
+                        que atuam de forma integrada, unindo conhecimento técnico, 
+                        experiência prática e dedicação em diferentes áreas do Direito.
+                        
+                        Com uma atuação pautada na ética, na responsabilidade e na 
+                        análise cuidadosa de cada caso, o escritório busca oferecer 
+                        soluções jurídicas consistentes, claras e alinhadas às necessidades de seus clientes, 
+                        sejam pessoas físicas ou jurídicas.</p>
+                    <a class="btn mt-5">Entre em Contato</a>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <!-- Advogados -->
+        <section class="py-10">
+            <div class="max-w-[1300px] w-[85dvw] md:w-full mx-auto">
+                <div class="flex flex-col gap-4 justify-between">
+                    <div class="relative">
+                        <div class="w-fit items-center relative z-10 pr-4 bg-branco">
+                            <h2 class=" py-1 pl-47 whitespace-nowrap text-black">Advogados</h2>
+                        </div>
+
+                        <span class="
+                            absolute
+                            right-full
+                            top-0
+                            h-[44px]
+                            w-screen
+                            bg-branco
+                        "></span>
+                    </div>
+
+                    <p>Atuação estratégica em diferentes áreas do Direito</p>
+                    
+                </div>
+
+                <div class=" flex flex-col md:flex-row w-full md:max-w-[450px] lg:max-w-[600px] max-w-[90dvw] justify-between mx-auto py-10 text-black items-center md:items-end">
+                    <div class="half-l">
+                        <div class="flex flex-col md:flex-row gap-5 md:gap-0 items-center relative">
+                            <div class="hidden md:flex absolute -left-52 top-5 flex-col min-h-70 justify-between w-fit py-3 items-end z-10">
+                                <button class="btn-advogados-esquerda">
+                                    <img src="imagens/Icones/document.png" class="w-5">
+                                    Direito Civil
+                                </button>
+                                <button class="btn-advogados-esquerda">
+                                    <img src="imagens/Icones/helmet.png" class="w-5">
+                                    Direito Trabalhista
+                                </button>
+                                <button class="btn-advogados-esquerda">
+                                    <img src="imagens/Icones/family.png" class="w-5">
+                                    Direito de Família
+                                </button>
+                                <button class="btn-advogados-esquerda">
+                                    <img src="imagens/Icones/office.png" class="w-5">
+                                    Direito Empresarial
+                                </button>
+                            </div>
+
+                            <div class="flex flex-col w-full max-w-[400px] md:w-fit items-center rounded-r-[14px] bg-[#112135] shadow-[-3px_-3px_10px_#00000040] pt-[4px] pb-4 px-[2px] transition-all duration-300 ease-in-out border border-[0.5px] border-dourado z-0">
+                                <img  src="imagens/almeida.png" class="img-l">
+                                <div class="w-4/5 bg-gradient-to-r from-[#523E15] via-[#E1A730] to-[#E1A730] h-[1px] mb-1"></div>
+                                <span class="name-l">Jorge Almeida</span>
+                                <p class="max-w-70 md:max-w-54 px-2 lg:max-w-60 text-branco">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam</p>
+                            </div>
+
+                            <div class="md:hidden grid grid-cols-2 gap-y-5 gap-x-3">
+                                <button class="btn-advogados-esquerda ">
+                                    <img src="imagens/Icones/document.png" class="w-5">
+                                    Direito Civil
+                                    <div></div>
+                                </button>
+                                <button class="btn-advogados-esquerda">
+                                    <img src="imagens/Icones/helmet.png" class="w-5">
+                                    Direito Trabalhista
+                                </button>
+                                <button class="btn-advogados-esquerda">
+                                    <img src="imagens/Icones/family.png" class="w-5">
+                                    Direito de Família
+                                </button>
+                                <button class="btn-advogados-esquerda">
+                                    <img src="imagens/Icones/office.png" class="w-5">
+                                    Direito Empresarial
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="half-r pt-30 md:pt-0">
+                        <div class="flex flex-col md:flex-row gap-5 md:gap-0 items-center relative">
+
+                            <div class="flex flex-col w-full max-w-[400px] md:w-fit items-center rounded-r-[14px] md:rounded-l-[14px] md:rounded-l-[0px] bg-[#112135] shadow-[-3px_-3px_10px_#00000040] pt-[4px] pb-4 px-[2px] transition-all duration-300 ease-in-out border border-[0.5px] border-dourado z-0">
+                                <img  src="imagens/castro.png" class="img-r">
+                                <div class="w-4/5 bg-gradient-to-r from-[#523E15] via-[#E1A730] to-[#E1A730] h-[1px] mb-1"></div>
+                                <span class="name-r">Leonardo Castro</span>
+                                <p class="max-w-70 md:max-w-54 px-2 lg:max-w-60 text-branco">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam</p>
+                            </div>
+
+                            <div class="md:absolute md:-right-63 md:flex md:flex-col md:min-h-70 md:justify-between md:py-3 grid grid-cols-2 gap-y-5 gap-x-3 z-10 top-6">
+                                <button class="btn-advogados-direita">   
+                                    <div></div>                                
+                                    Contratos
+                                    <img src="imagens/Icones/deal.png" class="w-5">
+                                </button>
+                                <button class="btn-advogados-direita">                                    
+                                    Responsabilidade Civil
+                                    <img src="imagens/Icones/balance.png" class="w-5">
+                                </button>
+                                <button class="btn-advogados-direita">                                   
+                                    Sucessões e Inventários
+                                    <img src="imagens/Icones/folder.png" class="w-5">
+                                </button>
+                                <button class="btn-advogados-direita">                                    
+                                    Consultoria Jurídica
+                                    <img src="imagens/Icones/shield.png" class="w-5">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Avaliações -->
+        <section class="bg-branco text-black py-16">
+            <div class="flex flex-col max-w-[1300px] mx-auto items-end">
+                <div class="relative text-branco justify-self-end pb-15">
+                    <div class="items-center relative z-10 bg-cinza pr-4">
+                        <h2 class="pl-2 whitespace-nowrap">Depoimentos</h2>
+                    </div>
+
+                    <span class="
+                        absolute
+                        left-full
+                        top-0
+                        h-[40px]
+                        lg:h-[36px]
+                        w-screen
+                        bg-cinza
+                    "></span>
+
+                    <p class="text-black">Compromisso refletido em cada relato</p>
+                </div>
+                <div class="overflow-hidden w-full">
+                    <div class="flex animate-scroll w-max">
+                        
+                    <div class="flex gap-10 pr-10">
+                        <div class="flex flex-col items-start max-w-130 font-['Poppins'] bg-[#EBEBEB] pr-10 pl-4 pb-10 pt-4 rounded-2xl">
+                            <div class="flex w-full justify-between items-center pb-2">
+                                <div class="flex items-center justify-between pr-8">
+                                    <img src="imagens/clientes/cliente-1.png" class="w-10 mr-3 h-10 object-cover rounded-full">
+                                    <div>
+                                        <p class="font-semibold whitespace-nowrap">Nome da Pessoa</p> 
+                                        <p class="text-gray-500">12/12/2012</p>
+                                    </div>
+                                    
+                                </div>
+                                <img src="imagens/Icones/google.svg" class="w-5 pt-1 self-start"> 
+                                
+                            </div>
+
+                            
+
+                            <div class="flex w-full h-fit">
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                            </div>
+                            <p>Descrição do depoimento</p>
+                        </div>
+
+                        <div class="flex flex-col items-start max-w-130 font-['Poppins'] bg-[#EBEBEB] pr-10 pl-4 pb-10 pt-4 rounded-2xl">
+                            <div class="flex w-full justify-between items-center pb-2">
+                                <div class="flex items-center justify-between pr-8">
+                                    <img src="imagens/clientes/cliente-1.png" class="w-10 mr-3 h-10 object-cover rounded-full">
+                                    <div>
+                                        <p class="font-semibold whitespace-nowrap">Nome da Pessoa</p> 
+                                        <p class="text-gray-500">12/12/2012</p>
+                                    </div>
+                                    
+                                </div>
+                                <img src="imagens/Icones/google.svg" class="w-5 pt-1 self-start"> 
+                                
+                            </div>
+
+                            
+
+                            <div class="flex w-full h-fit">
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                            </div>
+                            <p>Descrição do depoimento</p>
+                        </div>
+
+
+                        <div class="flex flex-col items-start max-w-130 font-['Poppins'] bg-[#EBEBEB] pr-10 pl-4 pb-10 pt-4 rounded-2xl">
+                            <div class="flex w-full justify-between items-center pb-2">
+                                <div class="flex items-center justify-between pr-8">
+                                    <img src="imagens/clientes/cliente-1.png" class="w-10 mr-3 h-10 object-cover rounded-full">
+                                    <div>
+                                        <p class="font-semibold whitespace-nowrap">Nome da Pessoa</p> 
+                                        <p class="text-gray-500">12/12/2012</p>
+                                    </div>
+                                    
+                                </div>
+                                <img src="imagens/Icones/google.svg" class="w-5 pt-1 self-start"> 
+                                
+                            </div>
+
+                            
+
+                            <div class="flex w-full h-fit">
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                            </div>
+                            <p>Descrição do depoimento</p>
+                        </div>
+
+                        <div class="flex flex-col items-start max-w-130 font-['Poppins'] bg-[#EBEBEB] pr-10 pl-4 pb-10 pt-4 rounded-2xl">
+                            <div class="flex w-full justify-between items-center pb-2">
+                                <div class="flex items-center justify-between pr-8">
+                                    <img src="imagens/clientes/cliente-1.png" class="w-10 mr-3 h-10 object-cover rounded-full">
+                                    <div>
+                                        <p class="font-semibold whitespace-nowrap">Nome da Pessoa</p> 
+                                        <p class="text-gray-500">12/12/2012</p>
+                                    </div>
+                                    
+                                </div>
+                                <img src="imagens/Icones/google.svg" class="w-5 pt-1 self-start"> 
+                                
+                            </div>
+
+                            
+
+                            <div class="flex w-full h-fit">
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                            </div>
+                            <p>Descrição do depoimento</p>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="flex gap-10 pr-10">
+                        <div class="flex flex-col items-start max-w-130 font-['Poppins'] bg-[#EBEBEB] pr-10 pl-4 pb-10 pt-4 rounded-2xl">
+                            <div class="flex w-full justify-between items-center pb-2">
+                                <div class="flex items-center justify-between pr-8">
+                                    <img src="imagens/clientes/cliente-1.png" class="w-10 mr-3 h-10 object-cover rounded-full">
+                                    <div>
+                                        <p class="font-semibold whitespace-nowrap">Nome da Pessoa</p> 
+                                        <p class="text-gray-500">12/12/2012</p>
+                                    </div>
+                                    
+                                </div>
+                                <img src="imagens/Icones/google.svg" class="w-5 pt-1 self-start"> 
+                                
+                            </div>
+
+                            
+
+                            <div class="flex w-full h-fit">
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                            </div>
+                            <p>Descrição do depoimento</p>
+                        </div>
+
+                        <div class="flex flex-col items-start max-w-130 font-['Poppins'] bg-[#EBEBEB] pr-10 pl-4 pb-10 pt-4 rounded-2xl">
+                            <div class="flex w-full justify-between items-center pb-2">
+                                <div class="flex items-center justify-between pr-8">
+                                    <img src="imagens/clientes/cliente-1.png" class="w-10 mr-3 h-10 object-cover rounded-full">
+                                    <div>
+                                        <p class="font-semibold whitespace-nowrap">Nome da Pessoa</p> 
+                                        <p class="text-gray-500">12/12/2012</p>
+                                    </div>
+                                    
+                                </div>
+                                <img src="imagens/Icones/google.svg" class="w-5 pt-1 self-start"> 
+                                
+                            </div>
+
+                            
+
+                            <div class="flex w-full h-fit">
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                            </div>
+                            <p>Descrição do depoimento</p>
+                        </div>
+
+
+                        <div class="flex flex-col items-start max-w-130 font-['Poppins'] bg-[#EBEBEB] pr-10 pl-4 pb-10 pt-4 rounded-2xl">
+                            <div class="flex w-full justify-between items-center pb-2">
+                                <div class="flex items-center justify-between pr-8">
+                                    <img src="imagens/clientes/cliente-1.png" class="w-10 mr-3 h-10 object-cover rounded-full">
+                                    <div>
+                                        <p class="font-semibold whitespace-nowrap">Nome da Pessoa</p> 
+                                        <p class="text-gray-500">12/12/2012</p>
+                                    </div>
+                                    
+                                </div>
+                                <img src="imagens/Icones/google.svg" class="w-5 pt-1 self-start"> 
+                                
+                            </div>
+
+                            
+
+                            <div class="flex w-full h-fit">
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                            </div>
+                            <p>Descrição do depoimento</p>
+                        </div>
+
+                        <div class="flex flex-col items-start max-w-130 font-['Poppins'] bg-[#EBEBEB] pr-10 pl-4 pb-10 pt-4 rounded-2xl">
+                            <div class="flex w-full justify-between items-center pb-2">
+                                <div class="flex items-center justify-between pr-8">
+                                    <img src="imagens/clientes/cliente-1.png" class="w-10 mr-3 h-10 object-cover rounded-full">
+                                    <div>
+                                        <p class="font-semibold whitespace-nowrap">Nome da Pessoa</p> 
+                                        <p class="text-gray-500">12/12/2012</p>
+                                    </div>
+                                    
+                                </div>
+                                <img src="imagens/Icones/google.svg" class="w-5 pt-1 self-start"> 
+                                
+                            </div>
+
+                            
+
+                            <div class="flex w-full h-fit">
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" class=" w-6 h-6 fill-dourado">
+                                    <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+                                </svg>
+                            </div>
+                            <p>Descrição do depoimento</p>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Contatos -->
+        <section class="flex flex-col items-center lg:flex-row lg:max-w-[1300px] max-w-[90dvw] h-fit py-20 mx-auto justify-between">
+            <div class="flex flex-col max-w-160 w-full justify-between h-fit">
+                <div class=" pb-20 relative max-w-90">
+                    <div class="w-fit items-center relative z-10 pr-4 bg-branco">
+                        <h2 class=" py-1 pl-47 whitespace-nowrap text-black">Contatos</h2>
+                    </div>
+
+                    <span class="
+                        absolute
+                        right-full
+                        top-0
+                        h-[44px]
+                        w-screen
+                        bg-branco
+                    "></span>
+
+                    <p>Nos mande seu caso através do formulário ou faça contato através de um dos nossos canais</p>
+                </div>
+                
+                <div class="hidden lg:flex w-full gap-2 justify-between">
+
+                    <div class="flex flex-col bg-[#112135] items-center w-fit py-5 px-5 rounded-xl border border-dourado">
+                        <img src="imagens/Icones/horario.png" class="w-[35px] pb-4" alt="horario">
+                        <p class="whitespace-nowrap">de 00:00 às 000</p>
+                    </div>
+
+                    <div class="flex flex-col bg-[#112135] items-center w-fit py-5 px-5 rounded-xl border border-dourado">
+                        <img src="imagens/Icones/email.png" class="w-[35px] pb-4" alt="email">
+                        <p class="whitespace-nowrap">emaildeexemplo@exemplo.com</p>
+                    </div>
+
+                    <div class="flex flex-col bg-[#112135] items-center w-fit py-5 px-5 rounded-xl border border-dourado">
+                        <div class="flex items-center gap-1">
+                            <img src="imagens/Icones/telefone.png" class="w-[35px] pb-4" alt="Telefone">
+                            <img src="imagens/Icones/whatsapp.png" class="w-[35px] pb-4" alt="What's App">
+                        </div>
+                        <p class="whitespace-nowrap">(00) 0000-0000</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <form class="flex flex-col justify-between items-center max-w-130 h-115 w-full bg-[#112135] p-10 rounded-xl">
+                <h3 class="self-start text-2xl">Nos conte seu caso</h3>
+                <input class="w-full bg-white text-gray-900 rounded-lg px-2 py-1 text-lg" placeholder="Nome*" type="text" maxlength="30">
+                <input class="w-full bg-white text-gray-900 rounded-lg px-2 py-1 text-lg" placeholder="Telefone*" type="tel" maxlength="30">
+                <input class="w-full bg-white text-gray-900 rounded-lg px-2 py-1 text-lg" placeholder="Email*" type="email" maxlength="30">
+                <textarea class="w-full bg-white text-gray-900 rounded-lg px-2 py-1 text-lg resize-none" placeholder="Mensagem*" type="text" maxlength="300"></textarea>
+                <button type="submit" class="btn w-full">Enviar</button>
+
+
+            </form>
+
+            <div class="flex flex-col lg:hidden w-full max-w-100 items-center gap-5 justify-between pt-10">
+
+                <div class="flex flex-col bg-[#112135] items-center w-fit py-5 px-5 rounded-xl border border-dourado">
+                    <img src="imagens/Icones/email.png" class="w-[35px] pb-4" alt="email">
+                    <p class="whitespace-nowrap">emaildeexemplo@exemplo.com</p>
+                </div>
+
+
+                <div class="flex justify-between md:justify-center md:gap-10 w-full">
+                    <div class="flex flex-col bg-[#112135] items-center w-fit py-5 px-5 rounded-xl border border-dourado">
+                        <img src="imagens/Icones/horario.png" class="w-[35px] pb-4" alt="horario">
+                        <p class="whitespace-nowrap">de 00:00 às 000</p>
+                    </div>
+
+                    
+
+                    <div class="flex flex-col bg-[#112135] items-center w-fit py-5 px-5 rounded-xl border border-dourado">
+                        <div class="flex items-center gap-1">
+                            <img src="imagens/Icones/telefone.png" class="w-[35px] pb-4" alt="Telefone">
+                            <img src="imagens/Icones/whatsapp.png" class="w-[35px] pb-4" alt="What's App">
+                        </div>
+                        <p class="whitespace-nowrap">(00) 0000-0000</p>
+                    </div>
+                </div>
+                    
+            </div>
+
+        </section>
+            
+        
+    </main>
+
+
+
+    <footer class="bg-[#112135] px-7 flex mt-30 py-7 border-t border-dourado">
+            <div class="flex flex-col gap-8 items-start lg:flex-row mx-auto w-full max-w-[1500px] justify-between">
+                <div class="flex flex-col lg:flex-row lg:self-center items-center">
+                    <img src="imagens/logo.png" class="w-70 h-fit">
+                    <div class="w-60">
+                        <p>OAB/DF 12345 • OAB/DF 67890</p>
+                        <p>Brasília – DF | Atendimento presencial e remoto</p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-dourado text-lg">Navegação</span>
+                    <a href="">Início</a>
+                    <a href="">Sobre</a>
+                    <a href="">Advogados</a>
+                    <a href="">Depoimentos</a>
+                    <a href="">Contatos</a>
+                </div>
+
+                <div>
+                    <span class="text-dourado text-lg">Contatos</span>
+                    <div>
+                    <p>Email de contato: emaildeexemplo@exemplo.com</p>
+                    <p>Telefone/What's App: (00) 0000-0000</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="text-dourado text-lg">Horário de Atendimento</span>
+                    <p>das 00:00 ás 00:00</p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+<script>
+    // Menu Mobile
+const abrirMenu = document.getElementById("abrir-menu")
+const menu = document.getElementById("menu")
+
+abrirMenu.addEventListener("click", (e) => {
+    e.stopPropagation() // impede de fechar imediatamente
+
+    menu.classList.toggle("h-0")
+    menu.classList.toggle("h-60")
+    menu.classList.toggle("pt-0")
+    menu.classList.toggle("py-5")
+})
+
+// fechar ao clicar fora
+document.addEventListener("click", (e) => {
+
+    if (!menu.contains(e.target) && !abrirMenu.contains(e.target)) {
+
+        menu.classList.add("h-0")
+        menu.classList.remove("h-60")
+        menu.classList.add("pt-0")
+        menu.classList.remove("py-5")
+
+    }
+
+    })
+</script>
+</html>

@@ -1,0 +1,18 @@
+header{
+    margin: auto;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    height: 171px;
+}
+
+header div{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    white-space: nowrap;
+}
