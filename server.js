@@ -7,7 +7,9 @@ require('dotenv').config();
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+    origin: 'https://ateliepixel.com' 
+}));
 app.use(express.json());
 
 // 1. Inicialização do Cliente Supabase
